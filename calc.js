@@ -5,6 +5,9 @@
             v2.innerHTML+="<br/>"+v1.value;
             
         }
+        function reset(){
+            document.getElementById('numberList').innerHTML="";
+        }
     
    
   
