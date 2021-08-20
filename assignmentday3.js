@@ -10,7 +10,7 @@ let Books=
 
 	{
 		
-        title:'The Magic          ',
+        title:'The Maggic',
         author:'Rhonda Byme   ',
         price:399,
         rating:4.5	
@@ -19,7 +19,7 @@ let Books=
     {
 		
         title:'Think and Grow Rich!',
-        author:'Nepoleon Hill    ',
+        author:'Nepoleon Hill',
         price:199,
         rating:4.7	
 	
@@ -27,7 +27,7 @@ let Books=
     {
 		
         title:'Bhagvad gita as it is',
-        author:' Swami Prabhupada   ',
+        author:' Swami Prabhupada',
         price:235,
         rating:4.8	
 	
@@ -40,25 +40,48 @@ let Books=
 function printarray()
   {
 for(let contact of Books){
-    console.log(`[${contact.title}\t${contact.author}\t${contact.price}\t  ${contact.rating}]`)
+    console.log(`[${contact.title}\t${contact.author}\t${contact.price}\t${contact.rating}]`)
 }
 console.log('Array will be printed');
   }
- function priceaverage()
+  function titleandPrice()
+    {
+      for(let val of Books)
+       {
+         console.log(`[${val.title}\t${val.price}]`);
+       }
+    }
+ function ratingavg()
  {
-     var result=0;
+       var result=0;
+     var count=0;
 
      for(let val of Books )
       {
-        result= result + parseFloat(Books.price); 
+        result= result + val.rating;
+        count++;
       }
-    return result;
+    return result/count;
+       
+ }
+  function priceaverage()
+ {
+     var result=0;
+     var count=0;
+
+     for(let val of Books )
+      {
+        result= result + val.price;
+        count++;
+      }
+    return result/count;
        
  }
   printarray();
  // var author=findbyauthor();
  // console.log('author',author);
   var avg=priceaverage();
-  console.log(avg);
-  var rat=avgrating();
-  var titleandprice=titleandPrice();
+  console.log('price average',avg);
+  var rat=ratingavg();
+  console.log('Rating average is',rat);
+  console.log('Title and Price',titleandPrice());
