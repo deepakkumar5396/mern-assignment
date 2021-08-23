@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display:block;
+        }
+
+        input[type=button]{
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+
+ <div class form-row>
+  <div class="form-group col-md-6">
+   <label> Book title</label>
+    <input type='text' id='title' placeholder='enter book title' />
+   </div>
+   </div>
+    <label> Author</label>
+    <input type='text' id='author' placeholder='enter author name'/>
+    <label> Price</label>
+    <input type='text' id='price' placeholder='enter the price'/>
+   <!-- <label> Cover </label>
+    <input type='file' id='coverpage' placeholder='upload the cover page'/>
+    -->
+
+    <input type="button" onClick="save()" value='Save' />
+    <p id="status"></p>
+<script>
+const title=document.getElementById('title');
+const author=document.getElementById('author');
+const price=document.getElementById('price');
+class Book {
+  
+
+function save(){
+    const titlebox=title.value;
+    const authorbox=author.value;
+    const pricebox=price.value;
+    const coverbox=cover.value;
+    localStorage.setItem("titlebox",title);
+    localStorage.setItem("authorbox",author);
+    localStorage.setItem("pricebox",price);
+    titlebox='';
+    authorbox='';
+    pricebox='';
+   status.innerHTML=` saved`;
+    
+}
+function load(){
+    const key=keyBox.value;
+    const value=localStorage.getItem(key);
+    if(value){
+        valueBox.value=value;
+        status.innerHTML=`done`;
+    } else{
+        status.innerHTML=`key ${key} not found`;
+        valueBox.value='';
+    }
+}
+</script>
+  
+</body>
+</html>

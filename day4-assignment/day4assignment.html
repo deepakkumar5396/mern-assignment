@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book's Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        table{
+            width:100%;
+            border:1px solid gray;
+        }
+        th{
+            background-color:black;
+            color:white;
+            font-size:1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        td{
+            font-size:1.2em;
+            border:1px solid gray;
+        }
+
+        .navigator{
+            border:  1px solid black;
+            padding:2px;
+            margin:5px;
+            background:black;
+            color:white;
+        }
+        .navigator button{
+            min-width:50px;
+        }
+        .delButton{
+            background:black;
+            color:red;
+            padding:10px;
+        }
+    </style>
+        
+    
+</head>
+<body>
+
+    <h1> Book's Web</h1>
+
+ 
+    <button onclick="addBook()"  title="Add a new book">
+      <i class="fas fa-plus"> Add Book</i> 
+          <script>
+                function addBook() {
+                window.location.replace("addbook.html")
+                    }
+          </script>        
+    </button>
+  <br></br>
+    <table>
+        <thead>
+           <tr>
+               <th>Cover</th>
+               <th>Title</th>
+               <th>Author</th>
+               <th>Price</th>
+               <th>Action</th>
+               <th>
+           </tr>
+             <tbody id="book">
+            <tr>
+                <td>aa</td>
+                <td>The Maggic</td>
+                <td>Rhonda Byrne</td>
+                <td>199</td>
+                <td>
+                    <button onclick="bookdetails()"  title="view Description">
+                      <i class="fas fa-info-circle"> Details</i> 
+                    <script>
+                    function bookdetails() {
+                     window.location.replace("day4details.html")
+                         }
+                    </script>        
+                   </button>
+                    <button onclick="delete"  title="delete book data">
+                      <i class="fas fa-trash"> Delete</i>         
+                   </button>
+                </td>
+
+            </tr>
+           
+        </tbody>
+        </thead>
+     
+    </table>
+
+   
+    
+
+   
+    
+</body>
+</html>
