@@ -54,17 +54,7 @@ function save(){
    status.innerHTML=` saved`;
     
 }
-function load(){
-    const key=keyBox.value;
-    const value=localStorage.getItem(key);
-    if(value){
-        valueBox.value=value;
-        status.innerHTML=`done`;
-    } else{
-        status.innerHTML=`key ${key} not found`;
-        valueBox.value='';
-    }
-}
+
 </script>
   
 </body>
