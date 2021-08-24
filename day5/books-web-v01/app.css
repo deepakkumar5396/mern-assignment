@@ -1,0 +1,158 @@
+body{
+    margin:0px;
+    padding:0px;
+
+}
+header{
+    background: lightskyblue;
+    margin:0px;
+    border:1px solid lightskyblue;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+header h1{
+    
+    font-family: courier;
+    margin-left:10px;
+    text-shadow:  -2px -2px 5px white;
+    
+}
+
+nav li{
+    list-style: none;
+    display:inline;
+    margin-right:5px;
+}
+
+nav li a{
+    color: black;
+    font-weight:bold;
+    text-decoration: none !important;    
+    padding:0px;
+    margin:0px;
+}
+
+nav li a:hover{
+    color:white;
+}
+
+
+#content{
+    padding-left:10px;
+    
+    
+}
+
+#content h1{
+    font-size:1.5em;
+    
+
+}
+
+#footer{
+    display:none;      
+    background: lightskyblue;
+    margin-top:20px;
+    padding-top:10px;
+    text-align:center;
+    color:gray;
+    border-top:1px solid lightgray;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+   
+    text-align: center;
+}
+
+
+.book-list{
+    width:90%;
+}
+
+.book-list th{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.book-list tr{
+    border-bottom: 1px solid lightgray;
+}
+
+.book-list img{
+    width:100px;
+}
+
+.primary{
+    color: black;
+}
+.danger{
+    color:red;
+}
+
+#book-cover{
+    border-right: 1px solid lightgray;
+}
+.cover-image{
+    margin-left:10px;
+    width:200px;
+    border-radius: 30px;
+    box-shadow: -5px -5px  5px black;
+}
+
+#book-info{
+    display:flex;
+    justify-content: center;
+}
+
+#book-cover{
+    flex: 3;
+}
+
+#book-details{
+    flex:7;
+    padding-left: 10px;
+}
+
+#review-form{
+    display:block;
+    margin:10px;
+    min-width: 400px;
+    border-top:1px solid rgb(155, 110, 110);
+}
+
+.review{
+    border-bottom: 1px solid lightgray;
+    margin-left: 10px;
+
+}
+
+.review p{
+    font-style:italic;
+}
+
+#add-book-form{
+   
+}
+
+#add-book-form label{
+    display:block;
+}
+
+#add-book-form input, #add-book-form textarea{
+    padding:5px;
+    margin-bottom:5px; 
+    border-radius:5px;
+    border-color:lightgray;
+}
+
+#add-book-form input[type=button]{
+    width:150px;
+    padding:5px;
+    background-color: lightskyblue;
+}

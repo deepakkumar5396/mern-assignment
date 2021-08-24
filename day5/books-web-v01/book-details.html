@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Books' Web</title>
+</head>
+<body onload="showBookDetails()">
+
+    <header>
+        <h1>Book's Web</h1>
+
+        <nav>
+            <u>
+                <u>
+                    <u>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book-add.html">Add Book</a></li>
+                        <li><a href="book-manage.html">Manage</a></li>
+                    </u>
+                </u>
+            </u>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h1>About <span id="book-title">The Accursed God</span></h1>
+        <h2>By <span id="book-author">Vivek Dutta Mishra</span></h2>
+      
+        <div id='book-info'>
+            <div id='book-cover'>
+                <img class='cover-image' id='cover-image' src='http://thelostepic.com/wp-content/uploads/2021/04/THE-ACCURSED-GOD-Front-780x1100-1.jpg'/>
+            </div>
+            <div id='book-details'>
+                THE LOST EPIC 
+                The story of the epic battle of Kurukshetra has been told and retold for ages. Millennia of dust, fables, imaginations — and the epic itself is lost. What remained is the story of a family feud and ambition of Kauravas and Pandavas. But why, then, was this an epic war? Why entire Aryavart plunged into this first real world-war? Why the echo of this ancient war still resonates after all those centuries? Rediscover the lost epic whose origin lies in the birth of the Kurukshetra that had tasted its first blood over a hundred years before the final Mahabharata war. Discover the complete saga of Mahabharata which goes far and beyond just Kauravas and Pandavas and their ambitions. THE ACCURSED GOD ================ Long before the epic battle, long before even the birth of Kurukshetra, a man swore on his father’s pyre to avenge against the mightiest empire, any civilization had ever seen. Between his might and near-certain destruction of the Empire, stood a warrior, who rose like a phoenix from the ashes of his seven dead brothers — taking the mantle of a fabled Accursed God. In the clash that followed, Aryavart heard several more oaths by the side of more burning pyres, until, a young king decided that no price is too high for peace. Little did he know that the price would be a war engulfing the entire Aryavart, where few would live to tell the tale. And only one man can delay the inevitable if not prevent it. He is the accursed God and even he doesn’t know that destiny is like a quicksand, the more he tries to prevent it, the faster Aryavart moves towards the ultimate catastrophe. Discover the saga of a man’s journey to that of a legendary and universally hated Accursed God, the saga of the ruthless ambitions and unfulfilled loves, endless deceits and vengeful oaths, and the saga of the battles to prevent the ultimate war. TESTIMONIALS ============= When is the last time you finished a book and discover something? Here is a gripping and intriguing take on the greatest epic of all time through the eyes of its pivotal character that leaves your mind exhilarated, adding a fresh perspective to the tale that’s known, yet unknown. Throughout the fast action-packed book, the author masterfully blends politics, war and science and blurs the gap between love and hate, peace and war, and fiction and reality. A must-read novel which will leave you wanting for more. --- Colonel Avanish, Indian Army
+            </div>
+        </div>
+
+        <div id='review-form'>
+            <div>
+                <label>Name</label>
+                <input type="text" id="reviewer-name" />
+            </div>
+            <div>
+                <label>Rating</label>
+                <select id="reviewer-rating">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment">Your Comment</label>
+                <br/>
+                <textarea name="reviewer-Comment" id="reviewer-comment" cols="130" rows="5"></textarea>    
+            </div>
+            <div>
+                <button class='primary'>Save</button>
+            </div>
+        </div>
+
+        <div id='reviews'>
+            <div class="review">
+                <h2>Shivanshi rate 4.5</h2>
+                <p>This is a great book to read. waitng for the next part</p>
+            </div>
+
+            <div class="review">
+                <h2>Sanjay rate 3.5</h2>
+                <p>This is a great book to read. waitng for the next part</p>
+            </div>
+
+            <div class="review">
+                <h2>Aman rate 4</h2>
+                <p>This is a great book to read. waitng for the next part</p>
+            </div>
+        </div>
+
+
+     
+
+    </div>
+
+  <div id="footer">
+      &copy; http://conceptarchitect.in
+  </div>
+
+  <script src="./scripts/book.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
