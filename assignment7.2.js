@@ -24,3 +24,15 @@ countDown(10).then(ans=>{
 }).catch(error=>{
     console.log(error);
 });
+
+/*
+var a=10;
+setInterval(countDown,1000);
+function countDown(){
+    a=a-1;
+    if(a>0)
+    console.log(a);
+    else{
+     console.log("Invalid interval");
+    }
+}*/
