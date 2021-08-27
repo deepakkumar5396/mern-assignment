@@ -1,9 +1,6 @@
-const { rejects } = require("assert/strict");
-const { resolve } = require("path/posix");
-const { resourceLimits } = require("worker_threads");
 
 function countDown(maxval){
-    return new Promise((resolve,rejects)=>{
+    return new Promise((resolve,reject)=>{
         let ans=[];
         let tid=setInterval(()=>{
             for(let i=maxval;i>=0;i--)
@@ -12,7 +9,7 @@ function countDown(maxval){
             return ;
         },1000);
         if(maxval<0){
-            return rejects(new Error("value you have enter less than 0"));
+            return reject(new Error("value you have enter less than 0"));
 
         }else{
             return resolve(ans);
