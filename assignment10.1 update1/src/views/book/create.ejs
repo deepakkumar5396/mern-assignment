@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome.min.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div class='jumbotron'>
+        <h1 class='jumbotron'>Book's Web</h1>
+        <nav>
+            <ul>
+                <li><a href="/book/list">Books</a></li>
+                <li><a href="/book/add">Add Books</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <h1>Add New Book</h1>
+        <hr/>
+        <form action="/book/add" method='post'>
+        
+            <div class='form-group'>
+                <label for="title">Title</label>
+                <input class='form-control' type='text' name="title" id="title" placeholder="Enter book title">
+            </div>
+
+            <div >
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input class='form-control' type="text" name="author" id="author" placeholder="Enter the author name">
+            </div>
+
+            <div class="form-group">
+                <label for="cover">Cover URL</label>
+                <input class='form-control' type="text" name="cover" id="cover" placeholder="Enter Cover URL">
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input class='form-control' type="text" name="price" id="price" placeholder="Enter Price">
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input class='form-control' type="text" name="rating" id="rating" placeholder="Enter Rating">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <br/>
+                <textarea class='form-control' 
+                name="description" rows="5" cols="50" 
+                id="description" placeholder="Enter Description" >
+                </textarea>
+            </div>
+            <p></p>
+            <div class="form-group">
+                <button class='btn btn-primary btn-lg form-control' type="submit">Save</button>
+            </div>
+           
+
+        
+        
+        
+        </form>
+
+    </div>
+</body>
+</html>

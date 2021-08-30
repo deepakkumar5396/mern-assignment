@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome.min.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div class='jumbotron'>
+        <h1 class='jumbotron'>Book's Web</h1>
+        <nav>
+            <ul>
+                <li><a href="/book/list">Books</a></li>
+                <li><a href="/book/add">Add Books</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1><%= book.title%></h1>
+        <h2>by <%=book.author%></h2>
+        <div class='row'>
+            <div class="col  col-md-4 cover-div">
+                <img class='details-cover' src="<%=book.cover%>" title="<%=book.title%> by <%=book.author%>" alt="<%=book.title%> by <%=book.author%>" srcset="">
+    
+            </div>
+    
+            <div class="col col-md-8">
+                <ul>
+                    <li>Price: <%=book.price%></li>
+                    <li>Rating: <%=book.rating%></li>
+                </ul>
+                <p><%=book.description%></p>
+            </div>
+    
+        </div>
+
+    </div>
+   
+    
+</body>
+</html>
