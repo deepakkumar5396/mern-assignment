@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Shadows+Into+Light&display=swap');
+
+
+
+.nav-right{
+    float:right;
+}
+
+
+.footer, footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+  }
+
+  footer a, footer a:hover{
+      color:white;
+      
+  }
+
+  .container{
+      padding-bottom: 50px;
+  }
+
+
+
+  /* app-home elements */
+  .app-home{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .app-home .quote{
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size:1.5em;
+  }
+  .app-home .author{
+    font-family: 'Allison', cursive;
+    font-size:1.8em;
+  }
+
+
+
+  h2{
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: -2px -2px 2px gray;
+    font-size:40px;
+}
+
+  .app-home .reference{
+      color: darkgray;
+      font-style: italic;
+      font-family:'courier new', cursive;
+      font-size:1.2em;
+  }
+
+  .app-home .coverimage{
+    width:500px;
+    border:10px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+/* book-list css */
+
+.book-list img{
+  width: 80px;
+  box-shadow: -2px -2px 2px gray;
+}
+
+
+.btn{
+  margin:5px;
+}
