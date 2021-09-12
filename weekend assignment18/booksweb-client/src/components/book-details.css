@@ -1,0 +1,31 @@
+//an h3 present in a element with class .book-details
+//.book-details is applied on the parent element
+//h3 is a child inside the parent
+.book-detail h3{
+    font-family: 'Allison', cursive;
+    font-size:30px;
+    padding-left:20px;
+}
+
+
+.book-details .book-info{
+    display:flex;
+    align-items:flex-start;
+}
+
+.book-details img{
+    width:300px;
+    max-width:300px;
+    flex:1;  
+    margin:10px;
+    border: 10px solid black;
+    padding:5px;
+    border-radius:10px;
+    box-shadow: -5px -5px 5px gray;
+
+}
+
+.book-details .info{
+    flex:4;
+    padding-left:10%;
+}

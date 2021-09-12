@@ -1,0 +1,43 @@
+h1{
+    text-shadow: -2px -2px 2px red;
+}
+
+.jumbotron{
+    background: black;
+    min-width:100px;
+    color:white;    
+}
+
+nav li{
+    display:inline;
+}
+
+nav li a{
+    text-decoration: none;
+    color:white;
+    padding-right: 20px;
+}
+
+nav li a:hover{
+
+    text-decoration: underline;
+    text-transform: uppercase;
+    color:white !important;
+}
+
+.details-cover{
+    width:200px;
+    box-shadow: -2px -2px 2px gray;
+    border-radius: 10%;
+    margin:10px;
+}
+.cover-div{
+    border-right:1px solid gray;
+}
+
+.thumbnail{
+    width:80px;
+    box-shadow: -2px -2px 2px gray;
+    border-radius: 5px;
+    
+}

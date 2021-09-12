@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Book's Web</title>
+</head>
+<body>
+    <h1>Book's Web Home Page</h1>
+    <button onClick="loadAllBooks();">Load Books</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="books">
+
+        </tbody>
+    </table>
+
+    <script>
+
+        const url='http://localhost:5000/api/books';
+
+        const loadAllBooks=async()=>{
+            console.log('loading books');
+            let response= await fetch(url);  //making a request to the server to get the data
+            let books=await response.json();
+            
+            //.log('books',books);
+            
+            
+            console.log('total books',books.length);
+            let data='';
+            for(let book of books){
+                data+=`
+                    <tr>
+                        <td><img width='80' src="${book.cover}"  /></td>
+                        <td>${book.title}</td>
+                        <td>${book.author}</td>
+                        <td>
+                            <button onClick="delete('${book.isbn}')">delete</button>
+                            <a href='/details.html?isbn=${book.isbn}')">details</a>
+                        </td>
+                `;
+            }
+
+            document.getElementById('books').innerHTML=data;
+        };
+
+        loadAllBooks();
+
+    </script>
+    
+</body>
+</html>
